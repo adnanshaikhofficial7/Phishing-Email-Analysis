@@ -1,0 +1,69 @@
+This report analyzes a suspected phishing email impersonating a financial service provider. Multiple indicators such as domain spoofing, failed SPF/DKIM/DMARC authentication, suspicious hyperlinks, and social engineering tactics confirm this email as a credential harvesting attempt. The overall risk level is assessed as HIGH.
+
+
+1 sender's email address for spoofing.
+
+	support@paypa1-security.com
+
+
+2 email headers for discrepancies
+ 
+1 Received Section 
+
+	185.234.217.45
+
+	IP is from unknown hosting server
+	Not related to PayPal infrastructure
+	
+	
+ 2 SPF Result
+ 	spf=fail
+	Sender is NOT authorized to send email for that domain.
+	
+ 3 DKIM	
+ 	dmarc=fail
+	Domain policy authentication failed.
+	Strong evidence of spoofing.	
+	
+ 4 Return-Path
+ 	support@paypa1-security.com
+ 	
+	Uses “paypa1” (number 1 instead of letter l)
+	Not official PayPal domain	
+
+
+3 suspicious links or attachments.
+  
+	http://paypal-security-check.com/login
+	
+4 urgent or threatening language in the email body.
+
+	
+	We detected unusual activity in your account.
+	Your account will be permanently suspended within 24 hours.
+
+	Click here to verify your account:
+	http://paypal-security-check.com/login
+
+	Failure to verify will result in account termination.
+	
+5 spelling or grammar errors
+
+ 	“paypa1” uses number 1 instead of letter l
+ 	
+ 	
+ 	
+ 
+Indicators of Compromise
+
+	Suspicious Domain: paypa1-security.com
+
+	Malicious URL: http://paypal-security-check.com/login
+
+	Originating IP: 185.xxx.xxx.xxx
+
+	Failed SPF/DKIM/DMARC
+	
+
+
+Through this task, I developed skills in email header analysis, phishing detection, social engineering identification, and threat documentation.
