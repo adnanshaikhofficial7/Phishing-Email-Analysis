@@ -1,0 +1,18 @@
+MessageId 	20260213091523.12345@mail.paypa1-security.com
+
+Created at: 	2/13/2026, 9:15:20 AM GMT+5:30 ( Delivered after 3 sec )
+
+From: 	"PayPal Security Team" <support@paypa1-security.com>
+
+To: 	user@gmail.com
+
+Subject: 	Urgent! Your Account Has Been Suspended
+
+SPF: 	
+fail with IP Unknown!
+
+DKIM: 	
+none
+
+DMARC: 	
+fail
